@@ -4,10 +4,9 @@ import { useRoomContext } from "@/context/RoomContext";
 import Image from "next/image";
 
 interface Chat {
-  id: number;
   sender: string;
   content: string;
-  time: string;
+  time?: string;
 }
 
 interface ChatContainerProps {
@@ -74,7 +73,7 @@ const ChatContainer: React.FC<ChatContainerProps> = ({ chats }) => {
               {chat.content}
             </p>
             <span className="text-sm font-normal text-gray-700 dark:text-gray-400">
-              {calculateMinutesAgo(chat.time)}
+              {chat.time ? calculateMinutesAgo(chat.time) : "No time available"}
             </span>
           </div>
         </div>

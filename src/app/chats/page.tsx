@@ -13,7 +13,7 @@ import toast from "react-hot-toast";
 interface Chat {
   sender: string;
   content: string;
-  time?: Date;
+  time?: string;
 }
 
 export default function Chats() {
