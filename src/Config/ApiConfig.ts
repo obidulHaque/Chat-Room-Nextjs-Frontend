@@ -1,5 +1,5 @@
 import Axios from "axios";
-export const BaseUrl = "http://localhost:8080";
+export const BaseUrl = "https://chat-room-spring-boot-backend.onrender.com";
 export const Api = Axios.create({
   baseURL: BaseUrl,
 });
