@@ -123,7 +123,7 @@ export default function Chats() {
   };
 
   return (
-    <div className="w-full h-screen bg-black overflow-y-auto relative">
+    <div className="w-full h-screen bg-black overflow-y-auto flex flex-col">
       <Navbar
         roomId={roomId}
         username={currentUser}
